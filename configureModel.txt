@@ -1,0 +1,38 @@
+[
+	{
+		"name": "Gosoft LLM",
+		"vendor": "customendpoint",
+		"apiKey": "xxxxxxxxxxxxxxx",
+		"apiType": "messages",
+		"models": [
+			{
+				"id": "task-thinking",
+				"name": "task-thinking",
+				"url": "http://172.17.184.32:4400/v1",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 9360000,
+				"maxOutputTokens": 50000
+			},
+			{
+				"id": "claude-bedrock",
+				"name": "claude-bedrock",
+				"url": "http://172.17.184.32:4400/v1",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 9360000,
+				"maxOutputTokens": 50000
+			}
+		],
+		"settings": {
+				"task-thinking": {
+					"thinkingLevel": "high",
+					"contextSize": 9360000
+				},
+				"claude-bedrock": {
+					"thinkingLevel": "high",
+					"contextSize": 9360000
+				}
+			}
+	}
+]
